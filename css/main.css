@@ -161,3 +161,16 @@ svg {
 #navbarResponsive {
   background-color: #0b2647;
 }
+
+.modal-card-head {
+  color: #fafafa;
+  background-color: #0b2647;
+}
+.modal-card-title {
+  color: #fafafa;
+}
+.modal-card-body {
+  color: #fafafa;
+  background-color: #144272;
+  margin-top: 0;
+}
