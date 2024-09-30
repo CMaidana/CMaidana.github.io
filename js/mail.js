@@ -18,16 +18,16 @@ window.addEventListener('DOMContentLoaded', event => {
         const modal = document.getElementById('form-modal');
         submitButton.disabled = true;
         submitButton.classList.add('is-loading');
-        setTimeout(() => {
-            submitButton.disabled = false;
-            submitButton.classList.remove('is-loading');
-            modal.classList.add('is-active');
-        }, 2000);
-        // emailjs.sendForm('mapesoftware', 'template_uz69bup', this)
-        //     .then(() => {
-        //         console.log('SUCCESS!');
-        //     }, (error) => {
-        //         console.log('FAILED...', error);
-        //     });
+
+        emailjs.sendForm('mapesoftware', 'template_uz69bup', this)
+            .then(() => {
+                submitButton.disabled = false;
+                submitButton.classList.remove('is-loading');
+                modal.classList.add('is-active');
+            }, (error) => {
+                submitButton.disabled = false;
+                submitButton.classList.remove('is-loading');
+                modal.classList.add('is-active');
+            });
     });
 });
