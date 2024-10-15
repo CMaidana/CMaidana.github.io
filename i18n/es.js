@@ -1,0 +1,27 @@
+const esTranslations = {
+  'nav-bar-services': 'Servicios',
+  'nav-bar-about': 'Sobre nosotros',
+  'nav-bar-contact': 'Contacto',
+  'hero-title': 'Soluciones de software a medida',
+  'hero-title-2': 'para impulsar tu negocio',
+  'hero-title-mobile': 'Soluciones de software a medida',
+  'hero-title-mobile-2': 'para impulsar tu negocio',
+  'services-title': 'Servicios',
+  'about-title': 'Sobre nosotros',
+  'contact-title': 'Contacto',
+  'services-crm-box': 'Integrar un CRM en tu empresa es esencial para optimizar las interacciones con los clientes y impulsar el crecimiento del negocio. Puedes centralizar y gestionar los datos de los clientes, agilizar la comunicación y mejorar la participación de los clientes. Desbloquea el poder del CRM y cultiva relaciones más sólidas con los clientes para el éxito a largo plazo.',
+  'services-cms-box': 'En CM Systems, nos especializamos en brindar soluciones CMS a medida que se alinean con tus objetivos empresariales. Nuestro equipo de expertos colabora estrechamente contigo para comprender tus necesidades y metas únicas. Crearemos un CMS personalizado que te permitirá gestionar tu contenido de manera eficiente, cautivar a tu audiencia y mantenerte a la vanguardia en el panorama digital.',
+  'services-ecommerce-box': 'Nuestro software de comercio electrónico te permite presentar productos, gestionar inventario, procesar pagos de manera segura y ofrecer una experiencia de compra fluida. Expande tu presencia en el mercado, optimiza las ventas y mantente competitivo en el mercado digital. Eleva tu negocio con el poder del comercio electrónico.',
+  'about-text': 'CM Systems es una empresa de desarrollo de software especializada en proporcionar soluciones personalizadas a empresas de todos los tamaños. Nuestro equipo de expertos desarrolladores cuenta con años de experiencia en la creación de soluciones de software de alta calidad adaptadas para satisfacer las necesidades únicas de nuestros clientes.',
+  'about-text-2': 'Estamos comprometidos en brindar a nuestros clientes el más alto nivel de servicio y soporte. Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y objetivos empresariales, y utilizamos nuestra experiencia y conocimientos para ofrecer soluciones de software que satisfagan esas necesidades y les ayuden a alcanzar sus metas.',
+  'form-name': 'Nombre',
+  'form-phone': 'Telefono',
+  'form-email': 'Email',
+  'form-message': 'Mensaje',
+  'submit-button': 'Enviar',
+  'cancel-button': 'Cancelar',
+  'modal-title': 'Formulario enviado!',
+  'modal-text': 'Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo lo antes posible.',
+};
+
+export default esTranslations;

@@ -174,3 +174,40 @@ svg {
   background-color: #144272;
   margin-top: 0;
 }
+
+.navbar-no-background:hover {
+  background-color: transparent !important;
+}
+.navbar-no-background:active {
+  background-color: transparent !important;
+}
+.navbar-no-background.active {
+  background-color: transparent !important;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+p {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slide-out {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-in {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+#language-select {
+  background-color: transparent;
+  color: #fafafa;
+}

@@ -1,0 +1,27 @@
+const enTranslations = {
+  'nav-bar-services': 'Services',
+  'nav-bar-about': 'About us',
+  'nav-bar-contact': 'Contact us',
+  'hero-title': 'Custom software solutions',
+  'hero-title-2': 'to boost your business',
+  'hero-title-mobile': 'Custom software solutions',
+  'hero-title-mobile-2': 'to boost your business',
+  'services-title': 'Services',
+  'about-title': 'About us',
+  'contact-title': 'Contact us',
+  'services-crm-box': 'Integrating a CRM into your business is essential for optimizing customer interactions and driving business growth. You can centralize and manage customer data, streamline communication, and enhance customer engagement. Unlock the power of CRM and foster stronger customer relationships for long-term success.',
+  'services-cms-box': 'At CM Systems, we specialize in providing custom CMS solutions that align with your business goals. Our team of experts works closely with you to understand your unique needs and objectives. We will create a tailored CMS that enables you to manage your content efficiently, engage your audience, and stay ahead in the digital landscape.',
+  'services-ecommerce-box': 'Our e-commerce software allows you to showcase products, manage inventory, securely process payments, and offer a seamless shopping experience. Expand your market presence, optimize sales, and stay competitive in the digital marketplace. Elevate your business with the power of e-commerce.',
+  'about-text': 'CM Systems is a software development company specialized in providing customized solutions to businesses of all sizes. Our team of expert developers has years of experience in creating high-quality software solutions tailored to meet the unique needs of our clients.',
+  'about-text-2': 'We are committed to providing our clients with the highest level of service and support. We work closely with our clients to understand their business needs and goals, leveraging our expertise and knowledge to deliver software solutions that meet those needs and help them achieve their objectives.',
+  'form-name': 'Name',
+  'form-phone': 'Phone',
+  'form-email': 'Email',
+  'form-message': 'Message',
+  'submit-button': 'Send',
+  'cancel-button': 'Cancel',
+  'modal-title': 'Form submitted!',
+  'modal-text': 'Your message has been successfully sent. We will get in touch with you as soon as possible.',
+};
+
+export default enTranslations;
