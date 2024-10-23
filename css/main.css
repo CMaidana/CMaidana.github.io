@@ -51,17 +51,17 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
     width: 100%;
     max-width: 7rem;
     height: 0.25rem;
-    background-color: #0A2647;
+    background-color: #000000;
     border-radius: 1rem;
-    border-color: #0A2647;
+    border-color: #000000;
 }
 .divider-custom .divider-custom-icon {
-    color: #0A2647;
+    color: #000000;
     font-size: 2rem;
 }
 
 .card-header-dark {
-  background-color: #144272;
+  background-color: #1a1a1a;
 }
 .card-header-title-white {
   color: #fafafa;
@@ -72,7 +72,7 @@ section {
   padding-bottom: 30px;
 }
 #about {
-  background-color: #144272;
+  background-color: #1a1a1a;
 }
 .subtitle {
   color: #fafafa;
@@ -89,21 +89,21 @@ section {
   color: #fafafa;
 }
 .navbar-item:hover {
-  background-color: #2C74B3 !important;
+  background-color: #222 !important;
   border-radius: 10%;
   text-shadow: 4px 3px 7px black;
 }
 .navbar.is-dark {
-  background-color: #0A2647;
+  background-color: #000000;
 }
 .mape-primary {
-  background-color: #0A2647 !important;
+  background-color: #000000 !important;
 }
 .mape-anti-primary {
-  color: #0A2647 !important;
+  color: #000000 !important;
 }
 .mape-footer {
-  background-color: #0A2647 !important;
+  background-color: #000000 !important;
   padding: 3rem 1.5rem 1rem !important;
 }
 .navbar-shrink {
@@ -124,7 +124,7 @@ html {
   scroll-behavior: smooth;
 }
 .navbar-item.active {
-  background-color: #2C74B3 !important;
+  background-color: #222 !important;
   border-radius: 10%;
   color: #fafafa;
 }
@@ -163,19 +163,19 @@ svg {
 }
 
 #navbarResponsive {
-  background-color: #0b2647;
+  background-color: #000000;
 }
 
 .modal-card-head {
   color: #fafafa;
-  background-color: #0b2647;
+  background-color: #000000;
 }
 .modal-card-title {
   color: #fafafa;
 }
 .modal-card-body {
   color: #fafafa;
-  background-color: #144272;
+  background-color: #1a1a1a;
   margin-top: 0;
 }
 
@@ -196,7 +196,6 @@ a {
 }
 
 p {
-  display: inline-block;
   position: relative;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
