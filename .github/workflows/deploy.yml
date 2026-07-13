@@ -1,0 +1,39 @@
+name: Deploy on tag
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: v3/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: v3
+
+      - name: Build
+        run: npm run build
+        working-directory: v3
+
+      - name: Deploy via SCP
+        uses: burnett01/rsync-deployments@7.0.1
+        with:
+          switches: -avz --no-perms --no-owner --no-group
+          path: v3/dist/
+          remote_path: /home/u313179859/domains/cmsystems.io/public_html/
+          remote_host: 82.29.199.106
+          remote_port: 65002
+          remote_user: u313179859
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}

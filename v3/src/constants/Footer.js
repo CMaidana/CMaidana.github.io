@@ -1,0 +1,1 @@
+export const FooterNote = 'Soluciones de software a medida';
