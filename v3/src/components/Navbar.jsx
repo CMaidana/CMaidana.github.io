@@ -59,9 +59,9 @@ function Navbar() {
           <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }}
             style={{ background: C.bg, borderTop: `1px solid ${C.border}`, overflow: "hidden" }}>
             <div style={{ padding: "16px 28px 24px" }}>
-              {links.map(l => (
-                <a key={l} href="#" onClick={() => setOpen(false)}
-                  style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: C.ink, textDecoration: "none", padding: "13px 0", borderBottom: `1px solid ${C.border}` }}>{l}</a>
+              {links.map(({name, key}) => (
+                <a key={`mobile-${key}`} href={`#${key}`} onClick={() => setOpen(false)}
+                  style={{ display: "block", fontFamily: "'DM Sans', sans-serif", fontSize: 16, color: C.ink, textDecoration: "none", padding: "13px 0", borderBottom: `1px solid ${C.border}` }}>{name}</a>
               ))}
             </div>
           </motion.div>

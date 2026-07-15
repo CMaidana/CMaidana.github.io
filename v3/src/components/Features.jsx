@@ -8,7 +8,7 @@ function Features() {
   const [ref, inView] = useReveal();
   const cats = features;
   return (
-    <section id="servicios" ref={ref} style={{ padding: "100px 28px", background: C.ink, borderTop: `1px solid ${C.border}`, position: "relative" }}>
+    <section id="services" ref={ref} style={{ padding: "100px 28px", background: C.ink, borderTop: `1px solid ${C.border}`, position: "relative" }}>
       <div style={{ position: "absolute", left: -80, top: "50%", transform: "translateY(-50%)", opacity: 0.06, pointerEvents: "none" }}>
         <HexLogo size={520} color={C.bg}/>
       </div>

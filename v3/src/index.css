@@ -50,8 +50,20 @@
   }
 }
 
+button {
+    touch-action: manipulation;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 #root {

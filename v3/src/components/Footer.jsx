@@ -1,5 +1,5 @@
 import HexLogo from "./HexLogo";
-import { C, FooterNote } from "../constants";
+import { C, FooterDisclaimer, FooterNote, SocialMediaLinks } from "../constants";
 
 function Footer() {
   return (
@@ -14,12 +14,12 @@ function Footer() {
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: C.inkMuted, lineHeight: 1.7, maxWidth: 280, margin: "0 0 20px" }}>
               {FooterNote}
             </p>
-            <a href="mailto:hola@cmsystems.io" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: C.ink, textDecoration: "none", borderBottom: `1px solid ${C.border}`, paddingBottom: 2 }}>hola@cmsystems.io</a>
+            {/* <a href="mailto:hola@cmsystems.io" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: C.ink, textDecoration: "none", borderBottom: `1px solid ${C.border}`, paddingBottom: 2 }}>hola@cmsystems.io</a> */}
           </div>
           {[
-            { title: "Servicios", links: ["Landing page", "E-commerce", "Instagram setup", "Branding"] },
-            { title: "Empresa", links: ["Sobre nosotros", "Casos de éxito", "Blog", "Trabajá con nosotros"] },
-            { title: "Soporte", links: ["FAQ", "WhatsApp", "Estado", "Términos"] },
+            { title: "Servicios", links: ["Landing page", "E-commerce", "Web Apps"] },
+            { title: "Empresa", links: ["Sobre nosotros", "Contacto"] },
+            // { title: "Soporte", links: ["FAQ", "WhatsApp", "Estado", "Términos"] },
           ].map(col => (
             <div key={col.title}>
               <p style={{ fontFamily: "'Syne', sans-serif", fontSize: 13, fontWeight: 700, color: C.ink, margin: "0 0 16px", letterSpacing: "-0.01em" }}>{col.title}</p>
@@ -32,9 +32,9 @@ function Footer() {
           ))}
         </div>
         <div style={{ borderTop: `1px solid ${C.border}`, paddingTop: 24, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: C.inkMuted, margin: 0 }}>© 2025 CMSYSTEMS.io — Todos los derechos reservados.</p>
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: C.inkMuted, margin: 0 }}>{ FooterDisclaimer }</p>
           <div style={{ display: "flex", gap: 24 }}>
-            {["Instagram", "LinkedIn", "WhatsApp"].map(s => (
+            {SocialMediaLinks.map(s => (
               <a key={s} href="#" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: C.inkMuted, textDecoration: "none", transition: "color 0.18s" }}
                 onMouseEnter={e => e.target.style.color = C.ink}
                 onMouseLeave={e => e.target.style.color = C.inkMuted}>{s}</a>

@@ -12,7 +12,7 @@ function Contact() {
   const [ref, inView] = useReveal();
 
   return (
-    <section id="contacto" ref={ref} style={{ padding: "100px 28px", background: C.ink, position: "relative", overflow: "hidden" }}>
+    <section id="contact" ref={ref} style={{ padding: "100px 28px", background: C.ink, position: "relative", overflow: "hidden" }}>
       <div style={{ position: "absolute", left: -80, top: "50%", transform: "translateY(-50%)", opacity: 0.06, pointerEvents: "none" }}>
         <HexLogo size={520} color={C.bg}/>
       </div>

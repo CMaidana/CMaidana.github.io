@@ -6,7 +6,7 @@ import { C, PRICES, CURRENCY, FinalCTABadge, FinalCTAHeading, FinalCTADescriptio
 
 function FinalCTA() {
   const [ref, inView] = useReveal();
-  const [headingLine1, headingLine2] = FinalCTAHeading.split('|');
+  const [headingLine1, _] = FinalCTAHeading.split('|');
   return (
     <section id="contacto" ref={ref} style={{ padding: "100px 28px", background: C.ink, position: "relative", overflow: "hidden" }}>
       <div style={{ position: "absolute", right: -80, top: "50%", transform: "translateY(-50%)", opacity: 0.06, pointerEvents: "none" }}>
@@ -14,16 +14,16 @@ function FinalCTA() {
       </div>
       <div style={{ maxWidth: 760, margin: "0 auto", textAlign: "center", position: "relative" }}>
         <motion.div variants={up} initial="hidden" animate={inView ? "visible" : "hidden"}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(250,250,250,0.08)", border: "1px solid rgba(250,250,250,0.18)", borderRadius: 100, padding: "5px 14px", marginBottom: 32 }}>
+          {/* <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(250,250,250,0.08)", border: "1px solid rgba(250,250,250,0.18)", borderRadius: 100, padding: "5px 14px", marginBottom: 32 }}>
             <span style={{ width: 7, height: 7, borderRadius: "50%", background: C.bg, display: "inline-block" }}/>
             <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: C.bg, fontWeight: 500 }}>{FinalCTABadge}</span>
-          </div>
+          </div> */}
           <h2 style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(32px, 5vw, 62px)", fontWeight: 800, color: C.bg, margin: "0 0 22px", letterSpacing: "-0.04em", lineHeight: 1.03 }}>
-            {headingLine1}<br />{headingLine2}
+            {headingLine1}
           </h2>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 18, color: "rgba(250,250,250,0.62)", marginBottom: 52, lineHeight: 1.7, maxWidth: 520, margin: "0 auto 52px" }}>
+          {/* <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 18, color: "rgba(250,250,250,0.62)", marginBottom: 52, lineHeight: 1.7, maxWidth: 520, margin: "0 auto 52px" }}>
             {FinalCTADescription}
-          </p>
+          </p> */}
           {/* <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="#precios"
               style={{ background: C.bg, color: C.ink, padding: "16px 32px", borderRadius: 10, fontFamily: "'DM Sans', sans-serif", fontWeight: 700, fontSize: 16, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 9, transition: "all 0.18s" }}
